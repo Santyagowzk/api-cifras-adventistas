@@ -1,28 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import Albuns from "./Albuns";
+import Artistas from "./Artistas";
 
-export default function App() {
-  const [aberta, setAberta] = useState(false);
-
+function App() {
   return (
-    <div className="min-h-screen bg-blue-100 p-6">
-      <h1 className="text-2xl font-bold text-blue-800 mb-4">Advento Cifras - Testando Build</h1>
-      <button
-        onClick={() => setAberta(!aberta)}
-        className="bg-green-600 text-white px-4 py-2 rounded"
-      >
-        Mostrar Cifra
-      </button>
-      {aberta && (
-        <div className="mt-4 p-4 bg-white shadow rounded">
-          <h2 className="text-xl font-semibold text-blue-700">Tu És Fiel, Senhor</h2>
-          <pre className="text-gray-800 whitespace-pre-wrap">
-C       G         Am     Em
-Tu és fiel, Senhor, meu Pai celeste
-F        C        D7         G
-Pleno poder aos teus filhos darás
-          </pre>
+    <Router>
+      <div className="min-h-screen bg-blue-50">
+        <Navbar />
+        <div className="p-6 max-w-4xl mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/albuns" element={<Albuns />} />
+            <Route path="/artistas" element={<Artistas />} />
+          </Routes>
         </div>
-      )}
-    </div>
+      </div>
+    </Router>
   );
 }
+
+export default App;
+
