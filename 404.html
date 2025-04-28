@@ -6,6 +6,13 @@
     <title>Redirecionando...</title>
   </head>
   <body>
-    <p>Redirecionando para o site...</p>
+    <script>
+      // Captura a URL atual
+      var path = window.location.pathname;
+      // Remove a parte do domínio
+      var cleanPath = path.replace("/api-cifras-adventistas", "");
+      // Redireciona para a raiz com o caminho limpo
+      window.location.replace("/api-cifras-adventistas" + cleanPath);
+    </script>
   </body>
 </html>
