@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/api-cifras-adventistas/static/css/main.b96a932a.css",
-    "main.js": "/api-cifras-adventistas/static/js/main.0cc2469b.js",
+    "main.js": "/api-cifras-adventistas/static/js/main.2f608c8d.js",
     "index.html": "/api-cifras-adventistas/index.html",
     "main.b96a932a.css.map": "/api-cifras-adventistas/static/css/main.b96a932a.css.map",
-    "main.0cc2469b.js.map": "/api-cifras-adventistas/static/js/main.0cc2469b.js.map"
+    "main.2f608c8d.js.map": "/api-cifras-adventistas/static/js/main.2f608c8d.js.map"
   },
   "entrypoints": [
     "static/css/main.b96a932a.css",
-    "static/js/main.0cc2469b.js"
+    "static/js/main.2f608c8d.js"
   ]
 }
